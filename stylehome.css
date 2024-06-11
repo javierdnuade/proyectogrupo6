@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*--------------------Edicion del header----------------------------*/
+
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+.foto-header {
+    width: 160px;
+}
+
+.buttons-header {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 550px;
+}
+.buttons-header button {
+    font-size: 1.2rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #FF0000;
+    transition: 0.8s;
+
+}
+
+.buttons-header button:hover {
+    background-color: #FFA9A9;
+    scale: 1.2;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F15A5A;
+    font-size: 3rem;
+    align-items: center;
+}
+
+/*---------------------Edicion del cuerpo-----------------------------*/
+
+section{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.foto-uade{
+    width: 500px;
+    display: flex;
+    margin: auto;
+}
+.home-card {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+    gap: 40px;
+    margin: 40px;
+}
+.text-card{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+.salud-image {
+    width: 300px;
+}
+.separador {           /*-------------------Footer-------------------*/
+    margin: 100px 150px 0px 150px;
+
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 40px;
+    gap: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+.footer_logo {
+    width: 80px;
+}
+
+@media(max-width:800px) {
+    *{
+        font-size: 0.9rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        position: inherit;
+        margin-bottom: 40px;
+    }
+    .buttons-header {
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;        
+    }
+    .foto-header{
+        width: 140px;
+    }
+    .foto-uade{
+        width: 380px;
+    }
+    .salud-image{
+        width: 240px;
+    }
+}
