@@ -15,19 +15,16 @@
 
     <header class="header">
         <img src="fotos/logo.png" class="foto-header">
-        <div class="slogan-container">
-            <div class="slogan">
+        <button class="menu-ham" id="menu-ham">&#9776;</button>
+        <ul class="buttons-header" id="buttons-header">
+            <li class="slogan">
                 ❤️Recuerda siempre, cuida tu memoria❤️
-            </div>
-        </div>
-        <div class="buttons-container">
-            <ul class="buttons-header">
-                <li><button>Home</button></li>
-                <li><button>About</button></li>
-                <li><button>Contact</button></li>
-                <li><button>Services</button></li>
-            </ul>
-        </div>
+            </li>
+            <li><button>Home</button></li>
+            <li><button>About</button></li>
+            <li><button>Contact</button></li>
+            <li><button>Services</button></li>
+        </ul>
     </header>
 
     <section>
@@ -49,5 +46,15 @@
         <img src="fotos/logo.png" class="footer_logo">
     </footer>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-ham');
+        const menu = document.getElementById('buttons-header');
+    
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+    </script>
 </body>
 </html>
