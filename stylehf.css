@@ -99,6 +99,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
+ 
     .menu-ham {
         display: block;
     }
@@ -110,7 +111,7 @@
         background-color: #f8f8f8;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 150px;
         left: 0;
         padding: 10px 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
