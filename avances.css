@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
     box-sizing: border-box;
     background-color: #FFFFFF;
     color: #333;
-    overflow-x: hidden;
 }
 
 .header {
@@ -25,7 +25,6 @@ body {
     position: relative;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    width: 100%;
 }
 
 .buttons-header {
@@ -123,39 +122,55 @@ body {
     color: #FF2D2D;
 }
 
-section{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    margin-top: 80px;
-    width: 100%;
+main {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.foto-uade{
-    width: 500px;
-    display: flex;
-    margin: auto;
+main h2 {
+    font-size: 3rem;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF2D2D;
 }
 
-.home-card {
+.content {
     display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight {
+    color: #FF2D2D;
+}
+
+.logos {
+    display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    margin: 40px;
 }
 
-.text-card{
+.icon {
+    width: 100px;
+}
+
+.palette {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: left;
-    gap: 30px;
-    font-size: 1.2rem;
+    justify-content: space-around;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-.salud-image {
-    width: 300px;
+.color {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: bold;
 }
 
 footer {
@@ -225,8 +240,17 @@ footer:hover {
         font-size: 2rem;
         margin: 10px auto; 
     }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro img {
+        width: 260px;
+    }
 }
-@media(max-width:800px) {
+
+@media (max-width:800px) {
     *{
         font-size: 0.9rem;
     }
@@ -242,15 +266,9 @@ footer:hover {
     .foto-header{
         width: 100px;
     }
-    .foto-uade{
-        width: 380px;
-    }
-    .salud-image{
-        width: 240px;
-    }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -268,5 +286,29 @@ footer:hover {
 
     .foto-header {
         width: 60px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro img {
+        width: 90px;
+    }
+
+    .games .game {
+        padding: 10px;
+    }
+
+    .games .description {
+        padding: 10px;
+    }
+
+    .games h2 {
+        font-size: 1.5rem;
+    }
+
+    .description h3 {
+        font-size: 1.2rem;
     }
 }

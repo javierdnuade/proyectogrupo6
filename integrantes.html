@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Salud Primero - Integrantes</title>
+    <link rel="stylesheet" href="integrantes.css">
+    <link rel="shortcut icon" href="fotos1/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" class="foto-header">
+        <button class="menu-ham" id="menu-ham">&#9776;</button>
+        <ul class="buttons-header" id="buttons-header">
+            <li class="slogan">
+                ❤️Recuerda siempre, cuida tu memoria❤️
+            </li>
+            <li><button><a href="index.html">Home</a></button></li>
+            <li><button><a href="integrantes.html">Integrantes</a></button></li>
+            <li><button><a href="avances.html">Avances</a></button></li>
+            <li><button><a href="juegos.html">Juegos</a></button></li>
+        </ul>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>La Salud Primero</h1>
+        </section>
+        <section id="integrantes">
+            <h2>Integrantes</h2>
+            <div class="integrantes-container">
+                <div class="integrante">
+                    <div class="foto">
+                        <img src="GreccoPerfil.png" alt="Foto de Bruno Grecco">
+                    </div>
+                    <div class="info red">
+                        <p>Bruno Grecco</p>
+                        <a href="https://bgreccouade.github.io/Perfil/">Enlace a github ficha personal</a>
+                    </div>
+                </div>
+                <div class="integrante">
+                    <div class="foto">FOTO</div>
+                    <div class="info blue">
+                        <p>Javier Del Negro</p>
+                        <a href="link-to-github">Enlace a github ficha personal</a>
+                    </div>
+                </div>
+                <div class="integrante">
+                    <div class="foto">FOTO</div>
+                    <div class="info red">
+                        <p>Mateo Marta</p>
+                        <a href="link-to-github">Enlace a github ficha personal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Derechos reservados - Sitio desarrollado para uso educativo - Diseño y Desarrollo Web - UADE 2024</p>
+        <img src="logo.png" class="footer_logo">
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-ham');
+        const menu = document.getElementById('buttons-header');
+    
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+    </script>
+</body>
+</html>

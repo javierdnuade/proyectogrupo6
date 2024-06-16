@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -70,7 +77,7 @@ body {
 .slogan {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: bold;
-    font-size: 2rem; 
+    font-size: 1rem; 
     color: #F15A5A; 
     background-color: #ffe5e5; 
     padding: 10px 20px; 
@@ -111,7 +118,7 @@ body {
     font-family: 'Rockwell', cursive;
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #e74c3c;
+    color: #FF2D2D;
 }
 
 .intro img {
@@ -120,7 +127,6 @@ body {
 
 .game p{
     color: #333;
-    font-size: 1rem;
 }
 .games {
     padding: 40px 20px;
@@ -129,7 +135,7 @@ body {
 .games h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #e74c3c;
+    color: #FF2D2D;
 }
 
 .games .game {
@@ -154,7 +160,7 @@ body {
 
 .games .description h3 {
     margin-top: 0;
-    color: #e74c3c;
+    color: #FF2D2D;
 }
 
 .games .description ul {
@@ -162,17 +168,18 @@ body {
 }
 
 .games .description a {
-    color: #3498db;
+    color: #2421C9;
     text-decoration: none;
     font-weight: bold;
 }
 
 .games .description a:hover {
     text-decoration: underline;
+    padding: 10px;
 }
 
 .games .image {
-    width: 40%;
+    width: 20%;
     overflow: hidden;
 }
 
