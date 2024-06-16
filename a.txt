@@ -1,0 +1,22 @@
+
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px; /* Añadido para separación visual */
+}
+
+.slogan {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; /* Tamaño de fuente ajustado */
+    color: #F15A5A; /* Color vibrante */
+    font-weight: bold;
+    background-color: #ffe5e5; /* Fondo suave para resaltar */
+    padding: 10px 20px; /* Padding ajustado */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    text-align: center;
+    width: fit-content;
+}
