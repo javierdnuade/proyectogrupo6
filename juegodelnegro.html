@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Del Negro</title>
+    <link rel="shortcut icon" href="fotos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylejuegodn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="title">¡Adivina el numero!</h1>
+    <div class="numero">
+        <p class="intentos"><b>Intentos: </b></p>
+        <div class="numeros">
+            <h1 class="num">?</h1>
+            <div class="info_contenedor">
+                <p class="info">Aca te aparecerá el dato del numero a adivinar</p>
+            </div>
+        </div>
+        <input type="number" id="adivinaNumero">
+        <p class="adivinar_numero">¡Ingrese un numero y toque el boton adivinar para iniciar el juego!</p>
+        <button class="adivinar">Adivinar</button>
+        <p class="resultado"></p>
+    </div>
+    <script src="juegodn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
