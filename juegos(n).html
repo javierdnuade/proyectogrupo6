@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Salud Primero - Juegos</title>
+    <link rel="stylesheet" href="stylesjuegos.css">
+    <link rel="shortcut icon" href="fotos1/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" class="foto-header">
+        <button class="menu-ham" id="menu-ham">&#9776;</button>
+        <ul class="buttons-header" id="buttons-header">
+            <li class="slogan">
+                ❤️Recuerda siempre, cuida tu memoria❤️
+            </li>
+            
+            <li><a href="index.html"><button>home</button></a></li>
+            <li><a href="int.html"><button>integrantes</button></a></li>
+            <li><a href="avances.html"><button>avances</button></a></li>
+            <li><a href="juegos.html"><button>juegos</button></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>La Salud Primero</h1>
+            <img src="fotocerebro.jpg" alt="Brain">
+        </section>
+        <section class="games">
+            <h2>Juegos de cada integrante</h2>
+            <div class="game">
+                <div class="description">
+                    <h3>Salud Click</h3>
+                    <p>SaludClick es un juego educativo que promueve hábitos alimenticios saludables. Los jugadores deben hacer clic en los alimentos saludables para ganar puntos, evitando los alimentos no saludables dentro de un tiempo límite. </p>
+                    <a href="juegogrecco.html" target="_blank">Juego integrante "Grecco"</a>
+                </div>
+                <div class="image">
+                    <img src="zanahoria.png" alt="Juego 1">
+                </div>
+            </div>
+            <div class="game">
+                <div class="description">
+                    <h3>Adivina el numero</h3>
+                    <p>En este juego vas a tener que adivinar el numero oculto con 10 intentos. Vas a poder ver si el numero ingresado es mas bajo o mas alto, y al adivinarlo conoceras un dato.</p>
+                    <a href="juegodelnegro.html" target="_blank">Juego integrante "Del Negro"</a>
+                </div>
+                <div class="image">
+                    <img src="interrogante.png" alt="Juego 2">
+                </div>
+            </div>
+            <div class="game">
+                <div class="description">
+                    <h3>Mental Quiz</h3>
+                    <p>Mental Quiz, Es un juego de verdadero y falso que abarca desde problemas mentales hasta el cuidado de la misma. Es un juego definido para gente mayor a 12 años para concientizar sobre la salud mental.</p>
+                    <a href="juegomateomarta.html">Juego integrante "Marta"</a>
+                </div>
+                <div class="image">
+                    <img src="fotocerebro.png" alt="Juego 3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Derechos reservados - Sitio desarrollado para uso educativo - Diseño y Desarrollo Web - UADE 2024</p>
+        <img src="logo.png" class="footer_logo">
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    console.log("Página cargada y lista");
+
+    const menuToggle = document.getElementById('menu-ham');
+    const menu = document.getElementById('buttons-header');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+});
+    </script>
+</body>
+</html>

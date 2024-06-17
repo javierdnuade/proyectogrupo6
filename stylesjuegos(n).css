@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.buttons-header {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.buttons-header li {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-header button {
+    font-size: 1.2rem;
+    background-color: white;
+    border: 2px solid #F15A5A;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: #F15A5A;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.buttons-header button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F15A5A;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.buttons-header button:hover::before {
+    transform: scaleX(1);
+}
+
+.buttons-header button:hover {
+    color: white;
+}
+
+.slogan {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: bold;
+    font-size: 2rem; 
+    color: #F15A5A; 
+    background-color: #ffe5e5; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto; /* Centra el slogan horizontalmente */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+.foto-header {
+    width: 140px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-header:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.menu-ham {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h1 {
+    font-family: 'Rockwell', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FF2D2D;
+}
+
+.intro img {
+    width: 350px;
+}
+
+.game p{
+    color: #333;
+}
+.games {
+    padding: 40px 20px;
+}
+
+.games h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FF2D2D;
+}
+
+.games .game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.games .game:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.games .description {
+    width: 60%;
+    padding: 20px;
+}
+
+.games .description h3 {
+    margin-top: 0;
+    color: #FF2D2D;
+}
+
+.games .description ul {
+    padding-left: 20px;
+}
+
+.games .description a {
+    color: #2421C9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.games .description a:hover {
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.games .image {
+    width: 20%;
+    overflow: hidden;
+}
+
+.games .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+        
+footer:hover {
+    background-color: #f0f0f0;
+}
+        
+.footer_logo {
+    width: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+        
+.footer_logo:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-ham {
+        display: block;
+        font-size: 3rem;
+        align-self: center;
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .buttons-header {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f8f8;
+        width: 100%;
+        position: absolute;
+        top: 160px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .buttons-header.active {
+        display: flex;
+    }
+    
+    .foto-header {
+        width: 100px;
+    }
+
+    .slogan {
+        font-size: 2rem;
+        margin: 10px auto; 
+    }
+
+    .games .description, .games .image {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro img {
+        width: 260px;
+    }
+    
+    .games h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    *{
+        font-size: 0.9rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons-header {
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;        
+    }
+    .foto-header{
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons-header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buttons-header button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .foto-header {
+        width: 60px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro img {
+        width: 90px;
+    }
+
+    .games .game {
+        padding: 10px;
+    }
+
+    .games .description {
+        padding: 10px;
+    }
+
+    .games h2 {
+        font-size: 1.5rem;
+    }
+
+    .description h3 {
+        font-size: 1.2rem;
+    }
+}
